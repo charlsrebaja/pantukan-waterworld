@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pantukan Water World - The ultimate water park experience with thrilling attractions, beach activities, and luxurious accommodations for family fun and relaxation."
+    />
+    <meta
+      name="keywords"
+      content="water park, resort, beach activities, accommodations, Pantukan, Davao, water slides, pool, family vacation"
+    />
+    <meta name="author" content="Pantukan Water World" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#72ccfd" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pantukanwaterworld.com/" />
+    <meta
+      property="og:title"
+      content="Pantukan Water World | Water Park & Resort"
+    />
+    <meta
+      property="og:description"
+      content="Experience thrilling water attractions and luxurious accommodations at Pantukan Water World."
+    />
+    <meta property="og:image" content="images/pantukan-logo.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://pantukanwaterworld.com/" />
+    <meta
+      property="twitter:title"
+      content="Pantukan Water World | Water Park & Resort"
+    />
+    <meta
+      property="twitter:description"
+      content="Experience thrilling water attractions and luxurious accommodations at Pantukan Water World."
+    />
+    <meta property="twitter:image" content="images/pantukan-logo.png" />
+
+    <title>Pantukan Water World | Water Park & Resort - Davao</title>
+    <link rel="icon" type="image/png" href="images/pantukan-logo.png" />
+    <link rel="canonical" href="https://pantukanwaterworld.com/" />
+
+    <!-- Performance: Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-brand">
+          <img
+            src="images/pantukan-logo.png"
+            alt="Pantukan Water World Logo"
+            class="nav-logo"
+          />
+          <h2>PANTUKAN WATER WORLD</h2>
+        </div>
+        <nav class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="#attractions" class="nav-link">Attractions</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="mobile-menu-toggle"
+          id="mobileMenuToggle"
+          aria-label="Toggle navigation menu"
+          title="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-section" id="home">
+      <div class="hero-carousel">
+        <!-- Carousel Slides -->
+        <div class="carousel-slide active">
+          <img src="images/herobg.jpg" alt="Pantukan Water World" />
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1 class="hero-title">Pantukan Water World</h1>
+            <p class="hero-tagline">
+              Make your stay fun, relaxing and memorable.
+            </p>
+            <a href="#attractions" class="btn btn-primary"
+              >Explore Attractions</a
+            >
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/herobg1.jpg" alt="Wave Pool Adventure" />
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1 class="hero-title">Experience the Wave Pool</h1>
+            <p class="hero-tagline">Feel the Ocean's Thrill!</p>
+            <a href="#attractions" class="btn btn-primary">Discover More</a>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/herobg2.jpg" alt="Extreme Water Slides" />
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1 class="hero-title">Extreme Water Slides</h1>
+            <p class="hero-tagline">Push Your Limits!</p>
+            <a href="#attractions" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/herobg3.jpg" alt="Relaxing Lazy River" />
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1 class="hero-title">Relax on the Lazy River</h1>
+            <p class="hero-tagline">Unwind and Float Away!</p>
+            <a href="#attractions" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/herobg4.jpg" alt="Family Fun Zone" />
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1 class="hero-title">Family Fun for Everyone</h1>
+            <p class="hero-tagline">Create Unforgettable Memories!</p>
+            <a href="#contact" class="btn btn-primary">Plan Your Visit</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Pagination Dots -->
+      <div class="carousel-pagination">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+        <span class="dot" data-slide="4"></span>
+      </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="attractions-section" id="attractions">
+      <div class="container">
+        <h2 class="section-title">Water Attractions</h2>
+        <p class="section-description">
+          We offer a variety of amenities to make your stay with us as
+          comfortable as possible. Entire family will enjoy the 4-slide swimming
+          pool for adults, galleon ship pool for kids and the bouncer slide that
+          will make your stay more memorable!
+        </p>
+        <div class="attractions-grid">
+          <div class="attraction-card">
+            <img
+              src="images/Attraction1.jpg"
+              alt="4-Slide Swimming Pool for Adults"
+            />
+            <div class="attraction-overlay">
+              <h3 class="attraction-title">4-Slide Swimming Pool for Adults</h3>
+            </div>
+          </div>
+
+          <div class="attraction-card">
+            <img
+              src="images/Attraction2.jpg"
+              alt="Galleon Ship Pool for Children"
+            />
+            <div class="attraction-overlay">
+              <h3 class="attraction-title">Galleon Ship Pool for Children</h3>
+            </div>
+          </div>
+
+          <div class="attraction-card">
+            <img src="images/Attraction3.jpg" alt="Bouncer Slide" />
+            <div class="attraction-overlay">
+              <h3 class="attraction-title">Bouncer Slide</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resort Hours Section -->
+    <section class="resort-hours-section" id="hours">
+      <div class="container">
+        <div class="resort-hours-content">
+          <!-- Left Side: Information -->
+          <div class="hours-info">
+            <div class="hours-details">
+              <div class="detail-item">
+                <span class="detail-icon">🕒</span>
+                <div class="detail-text">
+                  <strong>Resort Hours:</strong>
+                  <p>8:30 AM - 9:30 PM</p>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <span class="detail-icon">💰</span>
+                <div class="detail-text">
+                  <strong>Entrance Fee:</strong>
+                  <p>₱120 (Kids & Adults) | ₱90 (PWD & Senior Citizens)</p>
+                  <p style="margin-top: 0.8rem">
+                    <strong>Inclusions:</strong> Beach Access, Beach Deck,
+                    Toilet & Shower Area, Grill Area
+                  </p>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <span class="detail-icon">🏊</span>
+                <div class="detail-text">
+                  <strong>POOL AREA</strong>
+                  <p>₱120 - Kids & Adults</p>
+                  <p>₱90 - Seniors & PWD</p>
+                  <p style="margin-top: 0.8rem">
+                    <strong>Inclusions:</strong> Beach Access, 4 Slides Pool,
+                    Galleon Ship Pool, Beach Deck, Toilet & Shower, Grill Area
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Video -->
+          <div class="hours-video">
+            <iframe
+              class="pool-video"
+              src="https://www.youtube.com/embed/A-Wx9Rs0mdM?autoplay=1&loop=1&playlist=A-Wx9Rs0mdM&controls=1&modestbranding=1&rel=0"
+              title="Pantukan Water World Pool Area"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beach Activities Section -->
+    <section class="beach-activities-section" id="activities">
+      <div class="container">
+        <h2 class="section-title">Beach Activities</h2>
+        <p class="section-description">
+          Experience thrilling water sports and exciting beach activities for
+          all skill levels. From high-speed jet skiing to relaxing kayaking, we
+          offer a wide range of water adventures to make your beach day
+          unforgettable.
+        </p>
+        <div class="activities-grid">
+          <!-- Jetski Card -->
+          <div class="activity-card">
+            <img src="images/jetski.jpg" alt="Jetski" />
+            <div class="activity-overlay">
+              <h3 class="activity-name">JETSKI</h3>
+              <p class="activity-rates">₱1000 (15min) / ₱3500 (1hr)</p>
+            </div>
+          </div>
+
+          <!-- Wakeboard Card -->
+          <div class="activity-card">
+            <img src="images/wakeboard.jpg" alt="Wakeboard" />
+            <div class="activity-overlay">
+              <h3 class="activity-name">WAKEBOARD</h3>
+              <p class="activity-rates">₱1000 (15min)</p>
+            </div>
+          </div>
+
+          <!-- Banana Boat Card -->
+          <div class="activity-card">
+            <img src="images/bananaboat.jpg" alt="Banana Boat" />
+            <div class="activity-overlay">
+              <h3 class="activity-name">BANANA BOAT</h3>
+              <p class="activity-rates">₱1000 (15min, Max of 5)</p>
+            </div>
+          </div>
+
+          <!-- Kayak Card -->
+          <div class="activity-card">
+            <img src="images/kayak.jpg" alt="Kayak" />
+            <div class="activity-overlay">
+              <h3 class="activity-name">KAYAK</h3>
+              <p class="activity-rates">Single ₱200/hr, Duo ₱300/hr</p>
+            </div>
+          </div>
+
+          <!-- Stand-up Paddle Card -->
+          <div class="activity-card">
+            <img src="images/stand-up-paddle.jpg" alt="Stand-up Paddle" />
+            <div class="activity-overlay">
+              <h3 class="activity-name">STAND-UP PADDLE</h3>
+              <p class="activity-rates">₱300/hr</p>
+            </div>
+          </div>
+
+          <!-- Tube Card -->
+          <div class="activity-card">
+            <img src="images/tube.jpg" alt="Tube" />
+            <div class="activity-overlay">
+              <h3 class="activity-name">TUBE</h3>
+              <p class="activity-rates">₱1000 (15min)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms & Cottages Section -->
+    <section class="rooms-cottages-section" id="rooms">
+      <div class="container">
+        <h2 class="section-title">Rooms & Cottages</h2>
+        <p class="section-description">
+          Relax in comfort after a day of fun under the sun. Our diverse range
+          of accommodations caters to every type of guest, from budget-friendly
+          day tours to overnight stays and spacious group facilities. Whether
+          you're looking for air-conditioned rooms for a romantic getaway,
+          poolside gazebos for gatherings, or picnic cottages for large group
+          celebrations, Pantukan Water World offers the perfect retreat to
+          unwind and recharge after enjoying our thrilling water attractions and
+          beach activities.
+        </p>
+        <div class="rooms-content">
+          <!-- Left Side: Image Carousel -->
+          <div class="rooms-carousel-container">
+            <div class="rooms-carousel">
+              <div class="rooms-slide active">
+                <img src="images/room1.jpg" alt="Deluxe Room" />
+              </div>
+              <div class="rooms-slide">
+                <img src="images/room2.jpg" alt="Family Cottage" />
+              </div>
+              <div class="rooms-slide">
+                <img src="images/room3.jpg" alt="Beach Bungalow" />
+              </div>
+              <div class="rooms-slide">
+                <img src="images/room4.jpg" alt="Premium Suite" />
+              </div>
+            </div>
+
+            <!-- Carousel Navigation Dots -->
+            <div class="rooms-pagination">
+              <span class="room-dot active" data-slide="0"></span>
+              <span class="room-dot" data-slide="1"></span>
+              <span class="room-dot" data-slide="2"></span>
+              <span class="room-dot" data-slide="3"></span>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control prev" id="roomPrev">❮</button>
+            <button class="carousel-control next" id="roomNext">❯</button>
+          </div>
+
+          <!-- Right Side: Room Information -->
+          <div class="rooms-info-container">
+            <div class="room-info active" data-slide="0">
+              <h3 class="room-name">Airconditioned Rooms</h3>
+              <p class="room-description">
+                Comfortable and cool accommodation perfect for a relaxing stay.
+                Good for 2 persons with the option to accommodate up to 6 guests
+                with extra mattresses.
+              </p>
+              <ul class="room-features">
+                <li>✓ Rate: ₱2,500</li>
+                <li>✓ Good for 2 persons</li>
+                <li>✓ Maximum of 6 guests</li>
+                <li>✓ Extra mattress: ₱300/person</li>
+                <li>✓ Check-in: 2:00 PM</li>
+                <li>✓ Check-out: 12:00 PM</li>
+              </ul>
+              <p class="room-price">
+                <strong>Note:</strong> Breakfast not included
+              </p>
+            </div>
+
+            <div class="room-info" data-slide="1">
+              <h3 class="room-name">Pool Gazebo</h3>
+              <p class="room-description">
+                Enjoy a comfortable outdoor shelter perfect for groups and
+                gatherings. Ideal for daytime activities and social events at
+                the resort.
+              </p>
+              <ul class="room-features">
+                <li>✓ Rate: ₱650</li>
+                <li>✓ Maximum of 12 persons</li>
+                <li>✓ Hours: 8:30 AM - 9:30 PM</li>
+                <li>✓ No overnight stays</li>
+                <li>✓ Includes Pool Access</li>
+                <li>✓ Includes Entrance</li>
+              </ul>
+              <p class="room-price">
+                <strong>Note:</strong> Perfect for day groups and gatherings
+              </p>
+            </div>
+
+            <div class="room-info" data-slide="2">
+              <h3 class="room-name">Picnic Cottage</h3>
+              <p class="room-description">
+                Spacious cottage perfect for large group gatherings and
+                celebrations. Available for both day tours and overnight stays
+                to accommodate your event needs.
+              </p>
+              <ul class="room-features">
+                <li>✓ Day Tour: ₱450</li>
+                <li>✓ Overnight: ₱550</li>
+                <li>✓ Maximum of 25 persons</li>
+                <li>✓ Ideal for groups</li>
+                <li>✓ Tents not allowed</li>
+                <li>✓ Great for events</li>
+              </ul>
+              <p class="room-price">
+                <strong>Note:</strong> Perfect for gatherings and celebrations
+              </p>
+            </div>
+
+            <div class="room-info" data-slide="3">
+              <h3 class="room-name">Picnic Hut Cottage</h3>
+              <p class="room-description">
+                Cozy and intimate hut perfect for small groups and day trips. An
+                ideal getaway spot for families or small gatherings looking to
+                enjoy the beach during the day.
+              </p>
+              <ul class="room-features">
+                <li>✓ Rate: ₱200</li>
+                <li>✓ Day Tour Only</li>
+                <li>✓ Maximum of 5 persons</li>
+                <li>✓ No overnight stays</li>
+                <li>✓ Tents not allowed</li>
+                <li>✓ Perfect for small groups</li>
+              </ul>
+              <p class="room-price">
+                <strong>Note:</strong> Day tour package for intimate gatherings
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <h2 class="section-title">Photo Gallery</h2>
+        <p class="section-description">
+          Explore the stunning moments and beautiful memories captured at
+          Pantukan Water World. Discover the excitement, fun, and beauty of our
+          attractions and facilities.
+        </p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="images/gallery1.jpg"
+              alt="Gallery Image 1"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <span>View Image</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/gallery2.jpg"
+              alt="Gallery Image 2"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <span>View Image</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/gallery3.jpg"
+              alt="Gallery Image 3"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <span>View Image</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/gallery4.jpg"
+              alt="Gallery Image 4"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <span>View Image</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/gallery5.jpg"
+              alt="Gallery Image 5"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <span>View Image</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/gallery6.jpg"
+              alt="Gallery Image 6"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <span>View Image</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (People Also Ask) -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <h2 class="section-title">People Also Ask</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What are the operating hours of Pantukan Water World?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Pantukan Water World is open daily from 8:00 AM to 6:00 PM. We
+                recommend arriving early to make the most of your visit and
+                enjoy all our attractions!
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do I need to bring my own towels and swimwear?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, guests should bring their own towels and swimwear. We also
+                have a shop on-site where you can purchase these items if
+                needed. Lockers are available to store your belongings safely.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >Are there height or age restrictions for the water
+                slides?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Some of our extreme water slides have height restrictions for
+                safety reasons. Generally, riders must be at least 48 inches
+                (122 cm) tall. Our Kids Splash Zone is perfect for younger
+                children under supervision.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is food allowed inside the water park?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Outside food and beverages are not permitted inside the park. We
+                have several food courts and snack bars offering a variety of
+                delicious meals, snacks, and refreshments at reasonable prices.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is Pantukan Water World safe for non-swimmers?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Absolutely! We have trained lifeguards stationed throughout the
+                park, and life jackets are available free of charge. Our lazy
+                river and shallow pools are perfect for non-swimmers and
+                families with young children.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How much does admission cost?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Admission prices vary by age and season. Adults (12+ years)
+                typically pay ₱500-700, children (3-11 years) pay ₱350-500, and
+                children under 3 are free. Please contact us for current pricing
+                and group discounts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Map Section -->
+    <section class="location-section" id="location">
+      <div class="container">
+        <h2 class="section-title">Location & Map</h2>
+        <p class="section-description">
+          Visit us at our beautiful beachfront location in Pantukan. Use the map
+          below to find us and plan your visit.
+        </p>
+        <div class="location-content">
+          <!-- Map Container -->
+          <div class="map-container">
+            <iframe
+              title="Pantukan Water World Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31670.433292818183!2d125.86957015617652!3d7.148629692753353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96170e5e0a783%3A0xb5706d8ff797e9cc!2sWaterworld%20Pantukan!5e0!3m2!1sen!2sph!4v1761248375137!5m2!1sen!2sph"
+              class="location-map"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- Location Information -->
+          <div class="location-info">
+            <h3>Get Here</h3>
+            <div class="info-cards-grid">
+              <div class="info-card">
+                <h4>📍 Address</h4>
+                <p>Pantukan Beach, Pantukan, Davao Oriental, Philippines</p>
+              </div>
+
+              <div class="info-card">
+                <h4>📞 Contact Information</h4>
+                <p><strong>Phone:</strong> +63 123 456 7890</p>
+                <p><strong>Email:</strong> info@pantukanwaterworld.com</p>
+              </div>
+
+              <div class="info-card">
+                <h4>🕒 Hours of Operation</h4>
+                <p><strong>Monday - Sunday:</strong> 8:30 AM - 9:30 PM</p>
+                <p><strong>Open:</strong> Year-round</p>
+              </div>
+
+              <div class="info-card">
+                <h4>🚗 How to Get There</h4>
+                <p>
+                  From Davao City: Approximately 2-3 hours drive heading south
+                  towards Pantukan town. Follow signage to Pantukan Beach and
+                  our water park facility.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Logo and Description -->
+          <div class="footer-section">
+            <div class="footer-brand">
+              <img
+                src="images/pantukan-logo.png"
+                alt="Pantukan Water World Logo"
+                class="footer-logo"
+              />
+              <h3>PANTUKAN WATER WORLD</h3>
+            </div>
+            <p class="footer-description">
+              Where style, comfort and hospitality meet. Make your stay fun,
+              relaxing and memorable.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#attractions">Attractions</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon" aria-label="Facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Twitter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="YouTube">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Newsletter Subscription -->
+          <div class="footer-section">
+            <h4>Subscribe to Our Newsletter</h4>
+            <p class="newsletter-description">
+              Get updates on special offers and events
+            </p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="newsletter-input"
+                required
+              />
+              <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Pantukan Water World. All rights reserved.</p>
+          <p>Designed with ❤️ for adventure seekers</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
