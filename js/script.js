@@ -163,27 +163,29 @@ window.addEventListener("scroll", () => {
 
 const contactForm = document.getElementById("contactForm");
 
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  // Get form values
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+    // Get form values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-  // Validate form
-  if (name && email && message) {
-    // Show success alert
-    alert(
-      `Thank you, ${name}! Your message has been received.\n\nWe'll get back to you at ${email} as soon as possible!`
-    );
+    // Validate form
+    if (name && email && message) {
+      // Show success alert
+      alert(
+        `Thank you, ${name}! Your message has been received.\n\nWe'll get back to you at ${email} as soon as possible!`
+      );
 
-    // Reset form
-    contactForm.reset();
-  } else {
-    alert("Please fill in all fields before submitting.");
-  }
-});
+      // Reset form
+      contactForm.reset();
+    } else {
+      alert("Please fill in all fields before submitting.");
+    }
+  });
+}
 
 // ===================================
 // SCROLL ANIMATIONS (FADE IN ON SCROLL)
@@ -261,25 +263,28 @@ window.addEventListener("scroll", () => {
 // FAQ ACCORDION FUNCTIONALITY
 // ===================================
 
-const faqQuestions = document.querySelectorAll(".faq-question");
+document.addEventListener("DOMContentLoaded", function () {
+  const faqQuestions = document.querySelectorAll(".faq-question");
 
-faqQuestions.forEach((question) => {
-  question.addEventListener("click", () => {
-    const faqItem = question.parentElement;
-    const faqAnswer = question.nextElementSibling;
-    const isActive = question.classList.contains("active");
+  console.log("FAQ Questions found:", faqQuestions.length);
 
-    // Close all other FAQ items
-    faqQuestions.forEach((q) => {
-      q.classList.remove("active");
-      q.nextElementSibling.classList.remove("active");
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const faqAnswer = question.nextElementSibling;
+      const isActive = question.classList.contains("active");
+
+      // Close all other FAQ items
+      faqQuestions.forEach((q) => {
+        q.classList.remove("active");
+        q.nextElementSibling.classList.remove("active");
+      });
+
+      // Toggle current item
+      if (!isActive) {
+        question.classList.add("active");
+        faqAnswer.classList.add("active");
+      }
     });
-
-    // Toggle current item
-    if (!isActive) {
-      question.classList.add("active");
-      faqAnswer.classList.add("active");
-    }
   });
 });
 
